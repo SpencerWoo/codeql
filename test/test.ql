@@ -1,13 +1,10 @@
 /**
- * @name Empty block
- * @kind problem
- * @problem.severity warning
- * @id javascript/example/empty-block
+ * @name test
+ * @kind diagnostic
+ * @id javascript/test
  */
 
 import javascript
 
-from BlockStmt b
-where b.getNumStmt() = 0
-select b, "This is an empty block."
-
+from Function f
+select f
